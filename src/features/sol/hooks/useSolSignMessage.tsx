@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useWallet } from "@solana/wallet-adapter-react";
 import { toast } from "sonner";
+import { Buffer } from "buffer";
 
 export const useSolSignMessage = () => {
   const { signMessage } = useWallet();
